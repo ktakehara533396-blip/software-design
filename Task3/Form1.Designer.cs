@@ -32,7 +32,7 @@
             this.btnFibonacciSeq = new System.Windows.Forms.Button();
             this.lblFibonacciSeqResult = new System.Windows.Forms.Label();
             this.btnRecursivePower = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRecursivePowInput = new System.Windows.Forms.TextBox();
             this.lblRecursivePower = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -60,9 +60,9 @@
             this.lblFibonacciSeqResult.AutoSize = true;
             this.lblFibonacciSeqResult.Location = new System.Drawing.Point(95, 120);
             this.lblFibonacciSeqResult.Name = "lblFibonacciSeqResult";
-            this.lblFibonacciSeqResult.Size = new System.Drawing.Size(44, 16);
+            this.lblFibonacciSeqResult.Size = new System.Drawing.Size(48, 16);
             this.lblFibonacciSeqResult.TabIndex = 2;
-            this.lblFibonacciSeqResult.Text = "label1";
+            this.lblFibonacciSeqResult.Text = "Result:";
             // 
             // btnRecursivePower
             // 
@@ -72,22 +72,23 @@
             this.btnRecursivePower.TabIndex = 3;
             this.btnRecursivePower.Text = "Enter";
             this.btnRecursivePower.UseVisualStyleBackColor = true;
+            this.btnRecursivePower.Click += new System.EventHandler(this.btnRecursivePower_Click);
             // 
-            // textBox1
+            // txtRecursivePowInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 285);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 22);
-            this.textBox1.TabIndex = 4;
+            this.txtRecursivePowInput.Location = new System.Drawing.Point(128, 285);
+            this.txtRecursivePowInput.Name = "txtRecursivePowInput";
+            this.txtRecursivePowInput.Size = new System.Drawing.Size(167, 22);
+            this.txtRecursivePowInput.TabIndex = 4;
             // 
             // lblRecursivePower
             // 
             this.lblRecursivePower.AutoSize = true;
             this.lblRecursivePower.Location = new System.Drawing.Point(95, 334);
             this.lblRecursivePower.Name = "lblRecursivePower";
-            this.lblRecursivePower.Size = new System.Drawing.Size(44, 16);
+            this.lblRecursivePower.Size = new System.Drawing.Size(45, 16);
             this.lblRecursivePower.TabIndex = 5;
-            this.lblRecursivePower.Text = "label1";
+            this.lblRecursivePower.Text = "Result";
             // 
             // Form1
             // 
@@ -95,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 452);
             this.Controls.Add(this.lblRecursivePower);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtRecursivePowInput);
             this.Controls.Add(this.btnRecursivePower);
             this.Controls.Add(this.lblFibonacciSeqResult);
             this.Controls.Add(this.btnFibonacciSeq);
@@ -113,7 +114,7 @@
         private System.Windows.Forms.Button btnFibonacciSeq;
         private System.Windows.Forms.Label lblFibonacciSeqResult;
         private System.Windows.Forms.Button btnRecursivePower;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRecursivePowInput;
         private System.Windows.Forms.Label lblRecursivePower;
     }
 }
